@@ -1,0 +1,353 @@
+:root {
+    --main-color: #212121;
+    --sub-text-color:#757575;
+    --sub-font-size: 16px;
+    --main-background-color:#FFFFFF;
+    --focus-hover-background-color: #2196F3;
+    --focus-hover-color-button:#FFFFFF;
+    --focus-hover-color-text:#2196F3;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--main-color);
+    font-size: var(--main-font-size);
+    background-color: var(--main-background-color);
+}
+
+/* default styles*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Specific styles*/
+
+.container {
+    width:1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top:94px;
+    padding-bottom:94px;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size:  26px;
+    font-weight: 700;
+    color: #2196F3;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.logo span {
+    color:var(--main-color)
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list {
+    display:flex;
+    margin-left: 97px;
+}
+
+.nav-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    display: block;
+    padding: 32px 0 31px 0;
+}
+
+.contact-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--sub-text-color);
+    display: block;
+    padding: 32px 0 31px 0;
+}
+
+.nav-item:hover,
+.contact-item:hover {
+    color: var(--focus-hover-color-text);
+    cursor: pointer;
+}
+
+.active-link {
+    color: var(--focus-hover-color-text);
+}
+
+/* Hero */
+.hero {
+    background-color: #2F303A;
+    color: var(--main-background-color);
+    padding:200px 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-button {
+    font-family: Roboto, sans-serif;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    cursor:pointer;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+    background-color: #188CE8;
+}
+
+.hero-heading{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom:30px;
+}
+
+/* Info */
+.group-list{
+    display: flex;
+}
+
+.group-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.group-item{
+    width: 270px
+}
+
+.group-title{   
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+
+.group-info{      
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--sub-text-color)
+}
+
+/* What we do */
+.what-we-do-section {
+    padding-top: 0;
+}
+
+.what-we-do-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.what-we-do-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.what-we-do-list {
+    display:flex;
+    justify-content: center;
+}
+
+.what-we-do-item {
+    height: 294px;
+    width: 370px;
+}
+
+.what-we-do-item:not(:last-child){
+    margin-right: 30px;
+  }
+/* Our Team */
+.our-team-section {
+    background-color: #F5F4FA;
+}
+
+.our-team-container {
+    display: flex;
+    flex-direction: column;
+}
+.our-team-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;    
+}
+
+.our-team-title,
+.team-group-list {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member:not(:last-child){
+    margin-right: 30px;
+}
+
+.team-member {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background-color: var(--main-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.member-image {
+    margin-bottom: 30px;
+}
+
+.team-member-name{
+    font-weight: 500;
+    font-size: var(--sub-font-size);
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.team-member-position{
+    font-weight: 400;
+    font-size: var(--sub-font-size);
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--sub-text-color);
+}
+/* Footer */
+
+.footer{
+    background-color: #2F303A;
+    padding: 60px 0;
+}
+
+.logo-footer {
+    display:block;
+    margin-bottom: 10px;
+}
+
+.logo-footer span {
+    color: var(--main-background-color)
+}
+
+.footer-link{
+    color: var(--focus-hover-color-button);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
