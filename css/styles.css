@@ -351,3 +351,84 @@ address {
     line-height: 24px;
     letter-spacing: 0.03em;
 }
+
+
+/* Portofolio */
+
+/* Hero Section Navigation Projects Bar */
+
+.filters{
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+  
+.filter-project:not(:last-child){
+    margin-right: 8px;
+}
+
+.filter-btn {
+    font-family: Roboto, sans-serif;
+    background-color: #F5F4FA;
+    padding: 6px 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: var(--sub-font-size);
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.active-btn {
+    background-color: var(--focus-hover-background-color);
+    color: var(--focus-hover-color-button);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Projects Section */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:-30px;
+    margin-top:-30px;
+}
+
+.project-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    background: #FFFFFF;
+}
+
+.project-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    background: #FFFFFF;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding:20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top:none;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.project-type {
+    font-weight: 400;
+    font-size: var(--sub-font-size);
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--sub-text-color);
+}
