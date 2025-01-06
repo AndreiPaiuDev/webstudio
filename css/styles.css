@@ -6,6 +6,7 @@
     --focus-hover-background-color: #2196F3;
     --focus-hover-color-button:#FFFFFF;
     --focus-hover-color-text:#2196F3;
+    --icon-color: #AFB1B8;
 }
 
 body {
@@ -48,6 +49,7 @@ img {
 address {
     font-style: normal;
 }
+
 
 .link {
     text-decoration: none;
@@ -154,11 +156,29 @@ address {
     color: var(--focus-hover-color-text);
 }
 
+.header-incon-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--sub-text-color);
+}
+
+.header-icon{
+    fill:currentColor;
+    margin-right: 10px;
+}
+
 /* Hero */
+
 .hero {
-    background-color: #2F303A;
+    /* background-color: #2F303A; */
     color: var(--main-background-color);
     padding:200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url(../images/image-overlay.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .hero-container {
@@ -170,7 +190,8 @@ address {
     padding-bottom: 200px;
 }
 
-.hero-button {
+.hero-button,
+.subscription-button {
     font-family: Roboto, sans-serif;
     background-color: #2196F3;
     color: #FFFFFF;
@@ -189,6 +210,7 @@ address {
 .hero-button:focus,
 .hero-button:hover {
     background-color: #188CE8;
+    transition: .5s ease;
 }
 
 .hero-heading{
@@ -230,6 +252,16 @@ address {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--sub-text-color)
+}
+
+.group-info-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
 }
 
 /* What we do */
@@ -329,12 +361,96 @@ address {
     letter-spacing: 0.03em;
     color: var(--sub-text-color);
 }
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.social-icon-list:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-icon-list {
+    fill: currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    fill: var(--icon-color);
+}
+
+.social-icon-list:focus,
+.social-icon-list:hover {
+    background-color: var(--focus-hover-color-text);
+    fill: #FFFFFF;
+}
+
+/* Our Customers */
+
+.our-customers-section {
+    padding-top: 0;
+}
+
+.our-customers-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94PX;
+}
+
+.our-customers-list {
+    display: flex;
+    justify-content: center;
+    color: var(--icon-color);
+}
+
+.our-customer-item {
+    width: 170px;
+    height: 92px;
+    border: var(--icon-color) 1px solid;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.our-customer-item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+.our-customer-item:focus,
+.our-customer-item:hover {
+  border: 1px solid #2196F3;
+  color: var(--focus-hover-color-text);
+}
+
+.customer-icon {
+    fill: currentColor
+}
+
 /* Footer */
 
 .footer{
     background-color: #2F303A;
     padding: 60px 0;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 .logo-footer {
     display:block;
@@ -352,7 +468,113 @@ address {
     letter-spacing: 0.03em;
 }
 
+.footer-social-icon {
+    margin-left: 70px;
+}
 
+.footer-social-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+.footer-social-svg:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-social-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: white;
+    background-color: #FFFFFF10;
+    border-radius: 100%;
+}
+
+.footer-social-svg:focus,
+.footer-social-svg:hover {
+    background-color: var(--focus-hover-color-text);
+    fill: #FFFFFF;
+}
+
+.footer-form{
+    margin-left: 93px;
+}
+
+.subscription-header{
+    display: flex;
+  }
+  
+.subscription-form{
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 20px;
+}
+
+.subscription-input {
+display: flex;
+box-sizing:border-box;
+padding-left: 16px;
+height: 50px;
+width: 358px;
+background-color:#2F303A;
+color: var(--focus-hover-color-button);
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#footer-placeholder::placeholder{
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-icon {
+padding-left: 10px;
+fill: currentColor;
+}
+
+.subscription-button {
+padding: 10px 0px;
+width: 200px;
+margin-left: 12px;
+border-radius: 5px;
+background-color: var(--focus-hover-background-color);
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-button:focus,
+.subscription-button:hover {
+    background-color: #188CE8;
+    transition: .5s ease;
+}
+
+.subscription-input:hover,
+.subscription-input:focus {
+    border-color: var(--light-accent-color);
+}
 /* Portofolio */
 
 /* Hero Section Navigation Projects Bar */
@@ -404,10 +626,10 @@ address {
     background: #FFFFFF;
 }
 
-.project-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    background: #FFFFFF;
+.project-wrapper {
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .project-info {
@@ -432,3 +654,42 @@ address {
     letter-spacing: 0.03em;
     color: var(--sub-text-color);
 }
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.overlay-text {
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    
+}
+
+.project-wrapper:hover .project-overlay {
+    height: 100%;
+  }
+
+
+
+  
