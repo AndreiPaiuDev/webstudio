@@ -50,7 +50,7 @@
         <section class="hero section">
             <div class="container hero-container">
                 <h1 class="hero-heading">EFFECTIVE SOLUTIONS FOR<br>YOU BUSINESS</br></h1>
-            <button type="button" class="hero-button">Request Our Service</button>
+            <button type="button" class="hero-button" data-modal-open>Request Our Service</button>
             </div>
         </section>
         <!-- Info Section -->
@@ -327,5 +327,56 @@
         </div>
         
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-content">
+          <button type="button" class="form-close button" data-modal-close="">
+            x
+          </button>
+          <h3 class="modal-heading">Leave your information and we'll call you back</h3>
+          
+          <form class="modal-form" action="#" method="POST" name="order-form" autocomplete="off">
+              <label class="modal-label">
+                <span class="modal-label-text">Name</span>
+                <input class="modal-input modal-text textarea-placeholder" type="text" name="full-name" placeholder="Enter you name" required/>
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-modal-name"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+              <span class="modal-label-text">Telephone</span>
+              <input class="modal-input modal-text textarea-placeholder" type="tel" name="telephone" placeholder="Enter your phone number"/>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-modal-phone"></use>
+              </svg>
+             </label>
+              <label class="modal-label">
+              <span class="modal-label-text">E-mail</span>
+              <input class="modal-input modal-text textarea-placeholder" type="email" name="E-mail" placeholder="Enter your E-mail" required/>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-modal-email"></use>
+              </svg>
+             </label>
+            <label class="modal-label textarea-label">
+            <span class = "modal-label-text">Comments</span>        
+            <textarea class="modal-textarea modal-text textarea-placeholder" name="Comments" rows="7" placeholder="Enter your text"></textarea>
+            </label> 
+        <label class="agree-check">
+        <input type="checkbox" class="checkmark" name="agreement" value="agree" />
+          <svg class="icon" width="16" height="16">
+            <use href="./images/symbol-defs.svg#icon-modal-check"></use>
+          </svg>
+        <span class="agree-text">
+            I agree with the newsletter and accept the
+          <a class="link modal-link" href="#" class="terms">Terms and Conditions </a>
+        </span>
+        </label>
+        <button class="modal-button" type="submit">Send</button>
+        </form>
+      </div>
+      </div>
+    
+      <script src="./js/modal.js"></script>
 </body>
 </html>
